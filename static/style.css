@@ -1,0 +1,125 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    text-align: center; /* Center align content */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.label-group {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Custom radio button style */
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.custom-radio input[type="radio"] {
+    opacity: 0; /* Hide the actual radio button */
+    width: 0;
+    height: 0;
+}
+
+.custom-radio span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50; /* Border color */
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-radio input[type="radio"]:checked + span::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #4CAF50; /* Dot color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-radio input[type="radio"]:focus + span {
+    border-color: #4CAF50; /* Focus border color */
+}
+
+.custom-radio input[type="radio"]:hover + span {
+    background-color: rgba(76, 175, 80, 0.1); /* Hover background color */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: calc(100% - 20px); /* Adjust width with padding */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
