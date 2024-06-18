@@ -1,0 +1,14 @@
+Dataset ini berisi mengenai Indeks Standar Pencemar Udara (ISPU) yang diukur dari 5 stasiun pemantau kualitas udara (SPKU) yang ada di Provinsi DKI Jakarta Tahun 2021
+
+Penjelasan variabel dari data diatas sebagai berikut :
+
+tanggal : Tanggal pengukuran kualitas udara
+stasiun : Lokasi pengukuran di stasiun
+pm10 : Partikulat salah satu parameter yang diukur
+pm25 : Partikulat salah satu parameter yang diukur
+so2 : Sulfida (dalam bentuk SO2) salah satu parameter yang diukur
+co : Carbon Monoksida salah satu parameter yand diukur
+o3 : Ozon salah satu parameter yang diukur
+no2 : NItrogen dioksida salah satu parameter yang diukur
+max : Nilai ukur paling tinggi dari seluruh parameter yang diukur dalam waktu yang sama 10. critical : Parameter yang hasil pengukurannya paling tinggi
+categori : Kategori hasil perhitungan indeks standar pencemaran udara
